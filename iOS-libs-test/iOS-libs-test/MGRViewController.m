@@ -9,6 +9,7 @@
 #import "MGRViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
+#import <Toast+UIView.h>
 
 @interface MGRViewController ()
 
@@ -55,6 +56,9 @@
 - (void)loadingShowTimer:(NSTimer *)timer
 {
     [SVProgressHUD dismiss];
+    [self.view makeToast:@"loading complete!"
+                duration:1.0
+                position:@"top"];
 }
 
 @end
