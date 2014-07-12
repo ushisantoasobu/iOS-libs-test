@@ -1,0 +1,7 @@
+platform :ios, "7.0"
+pod 'SDWebImage'
+pod 'SVProgressHUD', :head
+pod 'BlocksKit'
+pod 'Toast', '~> 2.2'
+pod 'MagicalRecord'
+pod 'MWPhotoBrowser', :head
