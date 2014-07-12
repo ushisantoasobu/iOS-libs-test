@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS-libs-test/MGRViewController.m"
-            timestampString = "426850511.257183"
+            filePath = "Pods/SDWebImage/SDWebImage/SDWebImageManager.m"
+            timestampString = "426852502.499874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-downloadWithURL:options:progress:completed:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/SDWebImage/SDWebImage/SDWebImageManager.m"
-            timestampString = "426852502.499874"
+            filePath = "iOS-libs-test/MGRViewController.m"
+            timestampString = "426854747.754021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-downloadWithURL:options:progress:completed:"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-loadingShowTimer:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -8,6 +8,7 @@
 
 #import "MGRViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
 
 @interface MGRViewController ()
 
@@ -28,16 +29,32 @@
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
                        NSLog(@"cachatype:%d", cacheType);
                    }];
-    
-//    [[SDImageCache sharedImageCache] storeImage:nil
-//                                         forKey:@""
-//                                         toDisk:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"viewDidAppear");
+    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeClear];
+    [NSTimer scheduledTimerWithTimeInterval:2.0f
+                                     target:self
+                                   selector:@selector(loadingShowTimer:)
+                                   userInfo:nil
+                                    repeats:NO];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)btnTapped:(id)sender {
+    NSLog(@"yes, you can tap me!!");
+}
+
+- (void)loadingShowTimer:(NSTimer *)timer
+{
+    [SVProgressHUD dismiss];
 }
 
 @end
